@@ -2,49 +2,85 @@
 <html lang="en">
 
 <head>
+    <link href="css.css" rel="stylesheet">
+    <!-- <script type="text/javascript" src="script.js"></script> -->
+    <!-- <link href="script.js" rel="script"> -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>DOM Starter Kit</title>
     <style>
         body {
-            font-size: 24px;
+            font-size: 18px;
         }
     </style>
 </head>
 
-<body>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vitae consectetur nisi. Vivamus ut nibh justo.
-        <span id="noun1">___________</span> eros odio, tristique eget ultricies et, lacinia sit amet neque. Donec vestibulum bibendum felis at
-        auctor. Sed sed efficitur augue. <span id="noun2">________</span> efficitur accumsan lectus, eget hendrerit mi malesuada nec. Phasellus
-        egestas massa sed massa laoreet vehicula. Orci varius natoque penatibus et magnis dis parturient montes,
-        nascetur ridiculus mus.</p>
+<body class="body"><img src="dragonball.jpg">
+    <p>Dragon ball Z was created in
+        <span id="noun1">___________</span> Author <span id="noun2">________</span> and it has over <span
+            id="noun3">________</span> readers around the world </p>
     <p>
-        In hac habitasse platea dictumst. Aenean eget accumsan metus, vitae scelerisque lectus. Phasellus cursus lorem
-        augue, sit amet tincidunt nulla iaculis sit amet. Vivamus iaculis sodales consectetur. Proin imperdiet odio nec
-        tellus luctus porttitor. Phasellus tristique eget dui ut convallis. Vestibulum suscipit, magna eget maximus
-        condimentum, nunc enim placerat orci, ut dapibus diam diam sed libero. In tincidunt, velit quis suscipit
-        accumsan, sapien lacus consequat arcu, vel venenatis lacus leo in quam. Aliquam euismod nibh nulla.</p>
+        Dragon Ball Z (Japanese: ドラゴンボールＺゼット, Hepburn: Doragon Bōru Zetto, commonly abbreviated as DBZ) is a Japanese
+        anime television series produced by Toei Animation. It is the sequel to Dragon Ball and adapts the latter 325
+        chapters of the original 519-chapter Dragon Ball manga series created by Akira Toriyama which ran in Weekly
+        Shōnen Jump from 1988 to 1995. Dragon Ball Z aired in Japan on Fuji TV from April 26, 1989 to January 31, 1996,
+        before getting dubbed in territories including the United States, Canada, Australia, Europe, Asia, and Latin
+        America. It was broadcast in at least 81 countries worldwide.[4] It is part of the Dragon Ball media franchise.
+        <p id="magic">
+            Dragon Ball Z continues the adventures of Goku, who, along with his companions, defend the Earth against
+            villains ranging from aliens (Frieza), androids (Cell) and other creatures (Majin Buu). While the original
+            Dragon Ball anime followed Goku from childhood to early adulthood, Dragon Ball Z is a continuation of his
+            adult
+            life, but at the same time parallels the life of his son, Gohan, as well as the development of his rival
+            Vegeta.
+        </p>
+        Due to the success of the anime in the United States, the manga chapters making up its story were initially
+        released by Viz Media under the Dragon Ball Z title. Dragon Ball Z's popularity has spawned numerous releases
+        which have come to represent the majority of content in the Dragon Ball franchise; including 15 movies, 2 TV
+        specials, and 148 video games (many of them being only released in Japan), and a host of soundtracks stemming
+        from this material. Dragon Ball Z remains a cultural icon through numerous adaptations and re-releases,
+        including a more-recent remastered broadcast titled Dragon Ball Kai.[a] There have also been two sequel series;
+        Dragon Ball GT (1996–1997) and Dragon Ball Super (2015–2018)..</p>
+
+
     <form>
-        <label>A Noun:
+        <label>Dragon ball Z was Created in :
             <input type="text" id="noun1Input" value="" />
         </label>
-        <label>Another Noun:
+        </br>
+        <label>Author was:
             <input type="text" id="noun2Input" value="" />
         </label>
+        </br>
+        <label>How many Readers? :
+            <input type="text" id="noun3Input" value="" />
+        </label>
         <button type="button" id="clickMe">Click Me</button>
+        </br>
+        <label> Click me to see some magic~~!
+            <button type="button" onclick="myFunction()">The Magic Button</button>
+        </label>
     </form>
+    <script src="script.js"></script>
 </body>
-<script>
+
+
+<!-- <script>
     const myButton = document.getElementById("clickMe");
     const noun1 = document.getElementById("noun1");
-    const noun1Input = document.getElementById("noun1Input");
+    const noun2Input = document.getElementById("noun2Input");
+    const noun3Input = document.getElementById("noun3Input");
 
     myButton.addEventListener('click', function (e) {
         e.preventDefault();
-        
+
         noun1.innerHTML = noun1Input.value;
+        noun2.innerHTML = noun2Input.value;
+        noun3.innerHTML = noun3Input.value;
+
+        noun1.textContent = noun1Input.value;
     });
-</script>
+</script> -->
 
 </html>
